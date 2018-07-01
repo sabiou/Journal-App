@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.LoginActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="97dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/journal_app"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/editxtEmail"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="162dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="@string/Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editxtPassword"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="154dp"
+        android:background="@drawable/login_google"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/login"
+        android:textColor="@color/colorWhite" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="113dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/Signup"
+        android:textColor="@color/colorPrimary"
+        android:onClick="signUp"
+        android:textSize="15sp" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/signGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="41dp">
+
+    </com.google.android.gms.common.SignInButton>
+
+</RelativeLayout>
